@@ -1,0 +1,32 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akciger Hacmi Tahminleme</title>
+</head>
+<body>
+
+    <div>
+    <h1>Diabetes Prediction Project</h1>
+
+    <form action="{{ url_for('predict')}}"method="post">
+        
+    
+        Yas: <input type="text" name="Yas" id="Yas" placeholder="Yas">
+        <br> <br>
+        Cinsiyet: <input type="text" name="Cinsiyet" id="Cinsiyet" placeholder="Cinsiyet">
+        <br> <br>
+        BMI: <input type="text" name="BMI" id="BMI" placeholder="BMI">
+        <br> <br>
+
+        <button type="submit">Predict</button>
+
+    </form>
+    <br><br>
+    {{pred}}
+</div>
+</body>
+</html>
