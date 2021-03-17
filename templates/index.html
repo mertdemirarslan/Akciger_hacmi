@@ -5,12 +5,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Akciger Hacmi Tahminleme</title>
+    <title>Akciger Hacmi Hesaplama</title>
 </head>
 <body>
 
     <div>
-    <h1>Diabetes Prediction Project</h1>
+    <h1>Akciğer Hacmi Hesaplama</h1>
 
     <form action="{{ url_for('predict')}}"method="post">
         
@@ -19,7 +19,22 @@
         <br> <br>
         Cinsiyet: <input type="text" name="Cinsiyet" id="Cinsiyet" placeholder="Cinsiyet">
         <br> <br>
-        BMI: <input type="text" name="BMI" id="BMI" placeholder="BMI">
+        Boy: <input type="text" name="Boy" id="Boy" placeholder="Boy">
+        <br> <br>
+
+        <button type="submit">Predict</button>
+
+    </form>
+    <br><br>
+
+     <form action="{{ url_for('predict2')}}"method="post">
+        
+    
+        Yas: <input type="text" name="Yas" id="Yas" placeholder="Yas">
+        <br> <br>
+        Cinsiyet: <input type="text" name="Cinsiyet" id="Cinsiyet" placeholder="Cinsiyet">
+        <br> <br>
+        Boy: <input type="text" name="Boy" id="Boy" placeholder="Boy">
         <br> <br>
 
         <button type="submit">Predict</button>
@@ -27,6 +42,9 @@
     </form>
     <br><br>
     {{pred}}
+    </form>
+    <br><br>
+    {{pred2}}
 </div>
 </body>
 </html>
