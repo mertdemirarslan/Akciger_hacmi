@@ -17,9 +17,9 @@
     
         Yas: <input type="text" name="Yas" id="Yas" placeholder="Yas">
         <br> <br>
-        Cinsiyet: <input type="text" name="Cinsiyet" id="Cinsiyet" placeholder="Cinsiyet">
+        Cinsiyet: <input type="text" name="Cinsiyet" id="Cinsiyet" placeholder="1:Erkek, 2:Kadın">
         <br> <br>
-        Boy: <input type="text" name="Boy" id="Boy" placeholder="Boy">
+        Boy: <input type="text" name="Boy" id="Boy" placeholder="cm">
         <br> <br>
 
         <button type="submit">Predict</button>
@@ -27,24 +27,10 @@
     </form>
     <br><br>
 
-     <form action="{{ url_for('predict2')}}"method="post">
-        
     
-        Yas: <input type="text" name="Yas" id="Yas" placeholder="Yas">
-        <br> <br>
-        Cinsiyet: <input type="text" name="Cinsiyet" id="Cinsiyet" placeholder="Cinsiyet">
-        <br> <br>
-        Boy: <input type="text" name="Boy" id="Boy" placeholder="Boy">
-        <br> <br>
-
-        <button type="submit">Predict</button>
-
-    </form>
-    <br><br>
     {{pred}}
-    </form>
-    <br><br>
-    {{pred2}}
+
+   
 </div>
 </body>
 </html>
